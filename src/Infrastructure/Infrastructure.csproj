@@ -8,11 +8,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.AspNet.Authentication.Facebook" Version="1.0.0-rc1-final" />
+      <PackageReference Include="Duende.IdentityServer.EntityFramework.Storage" Version="6.1.2" />
+      <PackageReference Include="FluentValidation" Version="11.1.0" />
       <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="6.0.7" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="6.0.7" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.7" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.7" />
       <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.7" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.7" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.7" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.7">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -20,16 +24,19 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.7" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.7" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.7" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Specification.Tests" Version="7.0.0-preview.6.22324.4" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.5" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Application\Application.csproj" />
+      <ProjectReference Include="..\Common\Common.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Files" />
       <Folder Include="Localization" />
+      <Folder Include="Persistence\Configurations\Migrations" />
     </ItemGroup>
 
 </Project>
