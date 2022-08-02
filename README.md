@@ -1,0 +1,3 @@
+# AspNet-Angular-Shop
+## Techology
+ANGULAR 13 - NET6 - SQLSERVER - SQLITE - EFCORE - IDENTITYSERVER4
